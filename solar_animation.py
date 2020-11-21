@@ -11,6 +11,7 @@ wn.bgcolor("white")
 # Start with Summer?
 
 summer = turtle.Turtle()
+summer.hideturtle() # Hides turtle and just draws.
 
 summer.left(48)
 summer.forward(200)
