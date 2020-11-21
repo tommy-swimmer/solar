@@ -29,6 +29,11 @@ summer.right(180)
 summer.forward(400)
 summer.right(180)
 
+# I found this code from the turtle documentation. It could be useful for later fine-tuning.
+number_screen = turtle.Screen()
+x = number_screen.numinput("Enter angle","Summer Angle")
+print('The summer angle is:\n',x)
+
 turtle.done()
 
 # TO-DO
