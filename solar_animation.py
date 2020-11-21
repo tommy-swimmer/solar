@@ -2,6 +2,19 @@ import turtle
 
 # Some sort of re-creation of sun path angle?
 
+############### USE THIS CODE FOR ANGLE INPUTS IN THE FUTURE ################################
+# I found this code from the turtle documentation. It could be useful for later fine-tuning.
+summer_screen = turtle.Screen()
+summer_angle = summer_screen.numinput("Enter angle","This is only a test at the moment",45, minval=0, maxval=90)
+print('The summer angle is: {} degrees'.format(summer_angle))
+print('\n')
+
+winter_screen = turtle.Screen()
+winter_angle = winter_screen.numinput("Test","Winter Angle",45, minval=0, maxval=90)
+print('The winter angle is: {} degrees'.format(winter_angle))
+print('\n')
+#############################################################################################
+
 # Window Settings and Animation Name
 
 wn = turtle.Screen()
@@ -13,7 +26,7 @@ wn.bgcolor("white")
 summer = turtle.Turtle()
 summer.hideturtle() # Hides turtle and just draws.
 
-summer.left(48)
+summer.left(summer_angle)
 summer.forward(200)
 summer.right(180)
 summer.forward(400)
@@ -22,7 +35,7 @@ summer.forward(400)
 
 # End with winter?
 
-winter = 26+180 # There is definitely a better way to do this.
+winter = winter_angle + 180 # There is definitely a better way to do this.
 
 summer.right(winter)
 summer.forward(400)
@@ -30,12 +43,10 @@ summer.right(180)
 summer.forward(400)
 summer.right(180)
 
-# I found this code from the turtle documentation. It could be useful for later fine-tuning.
-number_screen = turtle.Screen()
-x = number_screen.numinput("Enter angle","Summer Angle")
-print('The summer angle is:\n',x)
+print(summer.position()) # Final ending position of summer turtle.
 
 turtle.done()
 
 # TO-DO
 # Enter in more precise angles for Summer and Winter sun. DONE
+# Continue fine-tuning the picture and maybe slow down the animation.
