@@ -5,7 +5,7 @@
 
 # Hi.
 
-# Helpful Tip: Use mkdir in any directory to make a folder.
+# Helpful Tip: Use mkdir in any directory to make a folder. rm -r to remove it.
 
 import numpy as np
 
