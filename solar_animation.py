@@ -35,14 +35,14 @@ summer.forward(400)
 
 # End with winter?
 
-winter = winter_angle + 180 # There is definitely a better way to do this.
+winter = winter_angle + 90 # There is definitely a better way to do this.
 
-summer.right(winter)
+summer.left(winter)
 summer.forward(400)
 summer.right(180)
 summer.forward(400)
-summer.right(180)
 
+print(summer.heading()) # Current heading of summer turtle
 print(summer.position()) # Final ending position of summer turtle.
 
 turtle.done()
