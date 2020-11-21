@@ -7,3 +7,4 @@ Might add animations depending on motivation.
 - Complete solar calculations for window.
 - Pull from Durango Land Use File to create finalized design.
 - Try to keep autoCAD file updated to most recent design.
+- Add La Plata County building code regulations (200 sq. ft now)
