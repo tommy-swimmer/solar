@@ -29,6 +29,9 @@ player_animate()
 # Create a while loop to call function.
 while True:
     wn.update()
+    print('It''s working')
+
+
 
 # Update November 21, 2020: using ontimer Method. 
 
