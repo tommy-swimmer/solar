@@ -14,16 +14,20 @@ player = turtle.Turtle()
 player.shape("circle")
 player.color("yellow")
 
+# Define basic animation as a function
 def player_animate():
     x = 0.5
     player.shape("circle")
+    player.color("red")
     time.sleep(x) # pauses program for x seconds.
     player.shape("square") # changes the shape
+    player.color("black")
     time.sleep(x) # pauses again.
 
+# Create a while loop to call function.
 while True:
-    print("Main Loop")
     player_animate()
+
 
 
 
