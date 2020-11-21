@@ -14,13 +14,19 @@ player = turtle.Turtle()
 player.shape("circle")
 player.color("yellow")
 
-x = 0.5
-
-while True:
+def player_animate():
+    x = 0.5
     player.shape("circle")
     time.sleep(x) # pauses program for x seconds.
     player.shape("square") # changes the shape
     time.sleep(x) # pauses again.
+
+while True:
+    print("Main Loop")
+    player_animate()
+
+
+
 
 
 
