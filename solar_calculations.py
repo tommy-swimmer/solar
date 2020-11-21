@@ -14,6 +14,9 @@ area = length * depth  # ft^2
 # Area of the wall
 print('The total area of the South-facing wall is:', area)
 
+# Make Roof - Roof Pitch
+roof_pitch = 10 # degrees
+
 # Degrees available for solar elevation
 degrees = np.linspace(26, 74, 48)  # Evenly spaced from 26 to 48? I'm not sure.
 print('\n The degrees available are:', degrees)
