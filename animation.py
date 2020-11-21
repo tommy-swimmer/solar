@@ -8,7 +8,24 @@ import time
 
 wn = turtle.Screen()
 wn.title("Animation Demo")
-wn.bgcolor("black")
+wn.bgcolor("white")
+
+player = turtle.Turtle()
+player.shape("circle")
+player.color("yellow")
+
+x = 0.5
+
+while True:
+    player.shape("circle")
+    time.sleep(x) # pauses program for x seconds.
+    player.shape("square") # changes the shape
+    time.sleep(x) # pauses again.
 
 
-wn.mainloop()
+
+
+wn.mainloop() # This keeps the window open.
+
+# TO-DO
+# Credit Youtube video for the base code and link it.
