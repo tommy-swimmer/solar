@@ -25,3 +25,4 @@ print('\n The degrees available are:', degrees)
 # 1. Find shaded area for array of degrees.
 # 2. Optimize overhang length. 1' to 2' , angle is 10 degrees.
 # 3. Open file and write to it, then display data in a separate file. Can test with other code if needed.
+
