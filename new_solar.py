@@ -22,7 +22,7 @@ print(test)
 # Prototype Code
 
 # Establish timedelta and timezone name
-offset = timedelta(hours=-7)
+offset = timedelta(hours=-6)
 name = 'Denver'
 
 # Equinox Date
@@ -30,10 +30,12 @@ date_real = datetime.datetime(2020, 3, 20, 12, 0, 0, 0, tzinfo=datetime.timezone
 
 denver_altitude = pysolar.solar.get_altitude(39.833, -98.583, date_real) # lat and long for Denver, answer should be around 49
 # As of 11/30/2020 got 50.2, close enough with NOAA of 49.29
+# JK I had the timezone set wrong, to -7, which gave me 2% error
+# Most current error is less than 0.01%
 
 print('Denver altitude is:', denver_altitude)
 print('NOAA data altitude:', 49.29)
 print('NOAA error is:', abs((denver_altitude-49.29)/denver_altitude))
 
 # TODO
-# Fix UTC time for Denver altitude
+# Fix UTC time for Denver altitude DONE
