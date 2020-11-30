@@ -19,6 +19,8 @@ test = pysolar.solar.get_altitude(42.206, -71.382, date)
 print('Test code:', test)
 #
 
+############################ Denver Prototype Test ############################
+###############################################################################
 # Prototype Code
 
 # Establish timedelta and timezone name
@@ -58,3 +60,6 @@ print('\nDenver irradiance:', denver_radiation, 'W/m^2', sep=" ")
 # Research irradiance data
 # Make UI or prettier to use
 # Enter TFR coordinates here:
+
+########################################################
+########################################################
