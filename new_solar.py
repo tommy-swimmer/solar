@@ -53,3 +53,8 @@ print('NOAA azimuth error is:', abs((denver_azimuth-NOAA_denver_azi)/denver_azim
 # Solar Irradiation Test
 denver_radiation = pysolar.radiation.get_radiation_direct(date_real, denver_altitude)
 print('\nDenver irradiance:', denver_radiation, 'W/m^2', sep=" ")
+
+# TODO
+# Research irradiance data
+# Make UI or prettier to use
+# Enter TFR coordinates here:
