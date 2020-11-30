@@ -41,13 +41,14 @@ denver_azimuth = pysolar.solar.get_azimuth(39.833, -98.583, date_real)
 NOAA_denver_alt = 49.29
 NOAA_denver_azi = 163.95
 
-print('\nDenver altitude is:', denver_altitude)
-print('NOAA data altitude:', NOAA_denver_alt)
-print('NOAA altitude error is:', abs((denver_altitude-NOAA_denver_alt)/denver_altitude))
+print('\nDenver altitude is:', denver_altitude, 'deg', sep=" ")
+print('Denver azimuth is:', denver_azimuth, 'deg', sep=" ")
 
-print('\nDenver azimuth is:', denver_azimuth)
-print('NOAA data azimuth:', NOAA_denver_azi)
-print('NOAA azimuth error is:', abs((denver_azimuth-NOAA_denver_azi)/denver_azimuth))
+print('\nNOAA data altitude:', NOAA_denver_alt, 'deg', sep=" ")
+print('NOAA data azimuth:', NOAA_denver_azi, 'deg', sep=" ")
+
+print('\nNOAA altitude error is:', abs((denver_altitude-NOAA_denver_alt)/denver_altitude), 'deg', sep=" ")
+print('NOAA azimuth error is:', abs((denver_azimuth-NOAA_denver_azi)/denver_azimuth), 'deg', sep=" ")
 
 # TODO
 # Fix UTC time for Denver altitude DONE
