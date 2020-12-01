@@ -5,10 +5,10 @@ from datetime import timedelta
 
 # Establish time offset
 offset = timedelta(hours=-6)
-name = 'TFR'
+name = 'Denver' # Name of timezone location (Daylight at the moment)
 
 # Equinox Date
-equinox_date = datetime.datetime(2021, 3, 20, 12, 0, 0, 0, tzinfo=datetime.timezone(offset, name))
+equinox_date = datetime.datetime(2021, 3, 20, 12, 0, 0, 0, tzinfo=datetime.timezone(offset, name)) 
 
 # Elevation and Azimuth Calculations
 # Turtle Lake Refuge Coordinates (via Google Earth):
@@ -30,9 +30,10 @@ TFR_irradiance = pysolar.radiation.get_radiation_direct(equinox_date, TFR_altitu
 print('---------------------------------------')
 print('---------- Solar Information ----------')
 print('---------------------------------------')
-print('Altitude:', TFR_altitude)
-print('Azimuth:', TFR_azimuth)
-print('Irradiance:', TFR_irradiance)
+print('Date:', equinox_date, name, 'timezone', sep=" ")
+print('\nAltitude:', TFR_altitude, 'degrees', sep=" ")
+print('Azimuth:', TFR_azimuth, 'degrees', sep=" ")
+print('Irradiance:', TFR_irradiance, 'W/m^2', sep=" ")
 
 # Solar Cell Efficiency Analysis
 # Panel Dimensions: 68x37MM/2.67x1.45"
