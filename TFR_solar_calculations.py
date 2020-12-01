@@ -32,8 +32,11 @@ print('Irradiance:', TFR_irradiance)
 # Panel Dimensions: 68x37MM/2.67x1.45"
 Panel_width = 37 # mm
 Panel_length = 68 # mm
-Panel_area = (Panel_width*Panel_length/1000) # m^2
+Panel_area = (Panel_width*Panel_length/(1000*1000)) # m^2
 solar_panel_efficiency = 0.15 # percentage
-Panel_irradiance = Panel_area * solar_panel_efficiency
-print('\nPanel power with Panel size and losses:', Panel_irradiance, 'W', sep=" ")
+Panel_power = (TFR_irradiance * Panel_area) * solar_panel_efficiency
+
+# Print out results
+print('\nPanel area:', Panel_area, 'm^2', sep=" ")
+print('Panel power with Panel size and losses:', Panel_power, 'W', sep=" ")
 
