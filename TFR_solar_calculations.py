@@ -27,3 +27,5 @@ TFR_irradiance = pysolar.radiation.get_radiation_direct(equinox_date, TFR_altitu
 print('Altitude:', TFR_altitude)
 print('Azimuth:', TFR_azimuth)
 print('Irradiance:', TFR_irradiance)
+
+
