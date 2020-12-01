@@ -1,5 +1,4 @@
 # Establish libraries
-# This all works finally!
 import pysolar
 import datetime
 from datetime import timedelta
