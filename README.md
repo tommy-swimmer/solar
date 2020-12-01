@@ -9,5 +9,7 @@ Might add animations depending on motivation.
 |Solar Elevation of Denver, Colorado|Working|
 |General Solar elevation test|Working|
 |Solarpy and datetime libraries|Working|
-|Azimuth calculations|To-do|
+|Azimuth calculations|Done|
+|More information|To-do|
+|Numpy Array Integration|To-do|
 |Error analysis|To-do|
