@@ -14,6 +14,7 @@ equinox_date = datetime.datetime(2021, 3, 20, 12, 0, 0, 0, tzinfo=datetime.timez
 # Turtle Lake Refuge Coordinates (via Google Earth):
 #				Latitude: 37
 #				Longitude: -108
+#               Note: inputs don't work with these?
 latitude = 37
 longitude = -108
 
@@ -23,7 +24,7 @@ TFR_azimuth = pysolar.solar.get_azimuth(latitude, longitude, equinox_date)
 # Irradiance Calculations
 TFR_irradiance = pysolar.radiation.get_radiation_direct(equinox_date, TFR_altitude)
 
-# Print out Results
+# Print out Results and Info
 print('Altitude:', TFR_altitude)
 print('Azimuth:', TFR_azimuth)
 print('Irradiance:', TFR_irradiance)
