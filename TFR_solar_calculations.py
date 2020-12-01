@@ -27,6 +27,9 @@ TFR_azimuth = pysolar.solar.get_azimuth(latitude, longitude, equinox_date)
 TFR_irradiance = pysolar.radiation.get_radiation_direct(equinox_date, TFR_altitude)
 
 # Print out Results and Info
+print('---------------------------------------')
+print('---------- Solar Information ----------')
+print('---------------------------------------')
 print('Altitude:', TFR_altitude)
 print('Azimuth:', TFR_azimuth)
 print('Irradiance:', TFR_irradiance)
@@ -43,3 +46,6 @@ Panel_power = (TFR_irradiance * Panel_area) * solar_panel_efficiency
 print('\nPanel area:', Panel_area, 'm^2', sep=" ")
 print('Panel power with Panel size and losses:', Panel_power, 'W', sep=" ")
 
+print('---------------------------------------')
+print('---------------------------------------')
+print('---------------------------------------')
