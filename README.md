@@ -7,6 +7,7 @@ Might add animations depending on motivation.
 |-|-|
 |Important pdfs for building requirements|Done|
 |Solar Elevation of Denver, Colorado|Working|
+|Solar Information for TFR|Working|
 |General Solar elevation test|Working|
 |Solarpy and datetime libraries|Working|
 |Azimuth calculations|Done|
