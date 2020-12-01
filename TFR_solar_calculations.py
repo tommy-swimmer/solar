@@ -28,4 +28,12 @@ print('Altitude:', TFR_altitude)
 print('Azimuth:', TFR_azimuth)
 print('Irradiance:', TFR_irradiance)
 
+# Solar Cell Efficiency Analysis
+# Panel Dimensions: 68x37MM/2.67x1.45"
+Panel_width = 37 # mm
+Panel_length = 68 # mm
+Panel_area = (Panel_width*Panel_length/1000) # m^2
+solar_panel_efficiency = 0.15 # percentage
+Panel_irradiance = Panel_area * solar_panel_efficiency
+print('\nPanel power with Panel size and losses:', Panel_irradiance, 'W', sep=" ")
 
