@@ -17,8 +17,10 @@ equinox_date = datetime.datetime(2021, 3, 20, 12, 0, 0, 0, tzinfo=datetime.timez
 #               Note: inputs don't work with these?
 print('Enter latitude')
 latitude = int(input())
+print('Latitude entered:', latitude)
 print('Enter longitude')
 longitude = int(input())
+print('Longitude entered:', longitude)
 
 TFR_altitude = pysolar.solar.get_altitude(latitude, longitude, equinox_date)
 TFR_azimuth = pysolar.solar.get_azimuth(latitude, longitude, equinox_date)
@@ -27,7 +29,7 @@ TFR_azimuth = pysolar.solar.get_azimuth(latitude, longitude, equinox_date)
 TFR_irradiance = pysolar.radiation.get_radiation_direct(equinox_date, TFR_altitude)
 
 # Print out Results and Info
-print('---------------------------------------')
+print('\n---------------------------------------')
 print('---------- Solar Information ----------')
 print('---------------------------------------')
 print('Date:', equinox_date, name, 'timezone', sep=" ")
