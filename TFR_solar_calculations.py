@@ -5,7 +5,7 @@ from datetime import timedelta
 
 # Establish time offset
 offset = timedelta(hours=-6)
-name = 'Denver' # Name of timezone location (Daylight at the moment)
+name = 'TFR' # Name of timezone location
 
 # Equinox Date
 equinox_date = datetime.datetime(2021, 3, 20, 12, 0, 0, 0, tzinfo=datetime.timezone(offset, name)) 
