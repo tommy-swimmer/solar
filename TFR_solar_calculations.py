@@ -1,5 +1,5 @@
 # Establish libraries
-import pysolar
+import pysolar # this will need to be installed by using pip, if opening for the first time.
 import datetime
 from datetime import timedelta
 
@@ -18,7 +18,7 @@ print('Enter day')
 day = int(input())
 print('Enter hour')
 hour = int(input())
-equinox_date = datetime.datetime(year, month, day, hour, 0, 0, 0, tzinfo=datetime.timezone(offset, name)) 
+date = datetime.datetime(year, month, day, hour, 0, 0, 0, tzinfo=datetime.timezone(offset, name)) 
 
 # Elevation and Azimuth Calculations
 # Turtle Lake Refuge Coordinates (via Google Earth):
@@ -32,17 +32,17 @@ print('Enter longitude')
 longitude = int(input())
 print('Longitude entered:', longitude)
 
-TFR_altitude = pysolar.solar.get_altitude(latitude, longitude, equinox_date)
-TFR_azimuth = pysolar.solar.get_azimuth(latitude, longitude, equinox_date)
+TFR_altitude = pysolar.solar.get_altitude(latitude, longitude, date)
+TFR_azimuth = pysolar.solar.get_azimuth(latitude, longitude, date)
 
 # Irradiance Calculations
-TFR_irradiance = pysolar.radiation.get_radiation_direct(equinox_date, TFR_altitude)
+TFR_irradiance = pysolar.radiation.get_radiation_direct(date, TFR_altitude)
 
 # Print out Results and Info
 print('---------------------------------------', file = open("solar_data.txt", "a"))
 print('---------- Solar Information ----------', file = open("solar_data.txt", "a"))
 print('---------------------------------------', file = open("solar_data.txt", "a"))
-print('Date:', equinox_date, name, 'timezone', sep=" ", file = open("solar_data.txt", "a"))
+print('Date:', date, name, 'timezone', sep=" ", file = open("solar_data.txt", "a"))
 print('\nAltitude:', TFR_altitude, 'degrees', sep=" ", file = open("solar_data.txt", "a"))
 print('Azimuth:', TFR_azimuth, 'degrees', sep=" ", file = open("solar_data.txt", "a"))
 print('Irradiance:', TFR_irradiance, 'W/m^2', sep=" ", file = open("solar_data.txt", "a"))
@@ -63,4 +63,8 @@ print('---------------------------------------', file = open("solar_data.txt", "
 print('---------------------------------------', file = open("solar_data.txt", "a"))
 print('---------------------------------------', file = open("solar_data.txt", "a"))
 
-print('\nCheck solar_data.txt for exported data.')
+print('\nSuccess! Check solar_data.txt for exported data.')
+
+
+# To-Do:
+# - Figure out how to input an array of different latitudes for visualization purposes.
