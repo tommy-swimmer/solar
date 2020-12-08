@@ -68,3 +68,4 @@ print('\nSuccess! Check solar_data.txt for exported data.')
 
 # To-Do:
 # - Figure out how to input an array of different latitudes for visualization purposes.
+# - Maybe add an input for additional comments if needed.
