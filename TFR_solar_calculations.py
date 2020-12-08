@@ -8,7 +8,16 @@ offset = timedelta(hours=-6)
 name = 'TFR' # Name of timezone location
 
 # Equinox Date
-equinox_date = datetime.datetime(2021, 3, 20, 12, 0, 0, 0, tzinfo=datetime.timezone(offset, name)) 
+# Equinox Date: 3/20 Assume Minute, Second, and Microsecond are all zero for now. Hour should be in 24 hour clock setting.
+print('Enter year')
+year = int(input())
+print('Enter month')
+month = int(input())
+print('Enter day')
+day = int(input())
+print('Enter hour')
+hour = int(input())
+equinox_date = datetime.datetime(year, month, day, hour, 0, 0, 0, tzinfo=datetime.timezone(offset, name)) 
 
 # Elevation and Azimuth Calculations
 # Turtle Lake Refuge Coordinates (via Google Earth):
