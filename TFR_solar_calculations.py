@@ -19,7 +19,9 @@ print('Enter day')
 day = int(input())
 print('Enter hour')
 hour = int(input())
-date = datetime.datetime(year, month, day, hour, 0, 0,
+print('Enter minute')
+minute = int(input())
+date = datetime.datetime(year, month, day, hour, minute, 0,
                          0, tzinfo=datetime.timezone(offset, name))
 
 # Elevation and Azimuth Calculations
