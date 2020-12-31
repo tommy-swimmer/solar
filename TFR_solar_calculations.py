@@ -6,7 +6,7 @@ from datetime import timedelta
 
 
 # Establish time offset
-offset = timedelta(hours=-6)
+offset = timedelta(hours=-7)
 name = 'TFR'  # Name of timezone location
 
 # Equinox Date
