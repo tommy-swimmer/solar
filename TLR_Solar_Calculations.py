@@ -26,14 +26,14 @@ date = datetime.datetime(year, month, day, hour, minute, 0,
 
 # Elevation and Azimuth Calculations
 # Turtle Lake Refuge Coordinates (via Google Earth):
-#				Latitude: 37
-#				Longitude: -108
-#               Note: inputs don't work with these?
+#				Latitude: 37.33
+#				Longitude: -107.87
+
 print('Enter latitude')
-latitude = int(input())
+latitude = float(input())
 print('Latitude entered:', latitude)
 print('Enter longitude')
-longitude = int(input())
+longitude = float(input())
 print('Longitude entered:', longitude)
 
 TFR_altitude = pysolar.solar.get_altitude(latitude, longitude, date)
