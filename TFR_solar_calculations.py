@@ -10,7 +10,7 @@ offset = timedelta(hours=-7)
 name = 'TFR'  # Name of timezone location
 
 # Equinox Date
-# Equinox Date: 3/20 Assume Minute, Second, and Microsecond are all zero for now. Hour should be in 24 hour clock setting.
+# Equinox Date: 3/20 Assume Second, and Microsecond are all zero for now. Hour should be in 24 hour clock setting.
 print('Enter year')
 year = int(input())
 print('Enter month')
